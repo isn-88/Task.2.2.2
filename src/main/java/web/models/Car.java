@@ -1,17 +1,19 @@
 package web.models;
 
+
+
 public class Car {
 
     private String brand;
     private String model;
-    private int year;
+    private int price;
 
     private Car() {}
 
-    public Car(String brand, String model, int year) {
+    public Car(String brand, String model, int price) {
         this.brand = brand;
         this.model = model;
-        this.year = year;
+        this.price = price;
     }
 
     public String getBrand() {
@@ -30,11 +32,11 @@ public class Car {
         this.model = model;
     }
 
-    public int getYear() {
-        return year;
+    public int getPrice() {
+        return price;
     }
 
-    public void setYear(int year) {
-        this.year = year;
+    public void setPrice(int price) {
+        this.price = price;
     }
 }
