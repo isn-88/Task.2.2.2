@@ -11,6 +11,7 @@ import java.util.stream.Collectors;
 
 @Component
 public class CarsDAOImpl implements CarsDAO{
+
     private List<Car> cars;
 
     public CarsDAOImpl() {
@@ -29,8 +30,6 @@ public class CarsDAOImpl implements CarsDAO{
 
     @Override
     public List<Car> getCarsCount(int count) {
-        List<Car> selectCars;
-        selectCars = cars.stream().limit(count).collect(Collectors.toList());
-        return selectCars;
+        return cars.stream().limit(count).collect(Collectors.toList());
     }
 }

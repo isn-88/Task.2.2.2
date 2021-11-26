@@ -8,17 +8,18 @@
 
 
 <h2>Cars</h2>
-<table border="2">
+<table th:border="2">
     <tr>
         <th>Brand</th>
         <th>Model</th>
-        <th>Year</th>
+        <th>Price</th>
     </tr>
     <tr th:each = "car: ${cars}">
-        <td th:text="${car.getBrand()}">Brand</td>
-        <td th:text="${car.getModel()}">Model</td>
-        <td th:text="${car.getYear()}">Year</td>
+        <td th:text="${car.brand}">Brand</td>
+        <td th:text="${car.model}">Model</td>
+        <td th:text="${car.price}">Year</td>
     </tr>
 </table>
 </body>
+
 </html>
